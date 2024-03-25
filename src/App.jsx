@@ -9,17 +9,16 @@ function App() {
  const [toggleButton, setToggleButton] = useState(false)
 
   const handleToggle=()=>{
-    console.log("my name is tabinda noor")
+    // console.log("my name is tabinda noor")
     setToggleButton((pre)=>!pre)
   }
 
   return (
     <>
-{
-  toggleButton ? <GamePlay /> : <StartGame handleToggle= {handleToggle}/>
-}
+      {
+        toggleButton ? <GamePlay /> : <StartGame handleToggle= {handleToggle}/>
+      }
     
- {/* <StartGame  /> */}
     </>
   )
 }

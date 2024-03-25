@@ -1,18 +1,22 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 
-const RoleDice = () => {
-    const [selectedDice, setSelectedDice] = useState(1)
+const RoleDice = ({selectedDice, setSelectedDice,rollDice,setScore}) => {
+    const [rules,setRules] = useState(false)
+    // const [selectedDice, setSelectedDice] = useState(1)
 
-    const randomeGenerator=(min, max)=>{
-        return (Math.ceil(Math.random() * (max - min) + min)) 
+    // const randomeGenerator=(min, max)=>{
+    //     return (Math.ceil(Math.random() * (max - min) + min)) 
+    // }
+
+    // const rollDice=()=>{
+
+    //     const diceValue = randomeGenerator(1,6)
+    //     setSelectedDice(diceValue)
+    // }
+
+    const handleRules=()=>{
+        setRules((pre)=>!pre);
     }
-
-    const rollDice=()=>{
-
-        const diceValue = randomeGenerator(1,6)
-        setSelectedDice(diceValue)
-    }
-
   return (
     <div>
         <div onClick={rollDice}>
@@ -22,9 +26,19 @@ const RoleDice = () => {
         <br />
         <p>Click on Dice to roll</p>
         <br />
-        <button>Reset Score</button>
+        <button onClick={()=>{setScore(0)}}>Reset Score</button>
         <br />
-        <button>Show rules</button>
+        <br />
+        <button onClick={handleRules}>{rules ? "Hide":"Show"} rules</button>
+        {  rules &&
+             <p>
+            select any number <br />
+            Clcik on dice image <br />
+            after click on dice if selected number is equal to dice number you will get some point as dice <br />
+            if you get wrong guess then 2 points will be deducted
+        </p>
+        }
+      
     </div>
   )
 }

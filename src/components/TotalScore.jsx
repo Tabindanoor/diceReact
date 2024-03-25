@@ -1,10 +1,10 @@
 import React from 'react'
 
-const TotalScore = () => {
+const TotalScore = ({score}) => {
   return (
     <div>
         <p>Your score is </p>
-        <p>0</p>
+        <p>{score} </p>
     </div>
   )
 }
