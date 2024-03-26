@@ -7,16 +7,16 @@ const StartGame = ({handleToggle}) => {
   return (
 
 
-    <div className="flex p-10 justify-center text-center">
-    <div>
-        <img src={pic} alt="pic" />
+    <div className="flex  justify-center text-center  ">
+
+    <div className="flex  justify-center text-center ">
+        <img src={pic} className="w-full" alt="pic" />
     </div>
 
-    <div>
-        <p className="font-bold">DICE GAME</p>
+    <div className="w-[50%] text-start" >
+        <p className="font-bold te">DICE GAME</p>
         <p onClick={handleToggle}>Play Now</p>
     </div>
-
 
     </div>
   )
