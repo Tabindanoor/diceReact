@@ -3,8 +3,7 @@ import React from 'react'
 const TotalScore = ({score}) => {
   return (
     <div>
-        <p>Your score is </p>
-        <p>{score} </p>
+        <p className='text-2xl font-serif font-bold text-start '>Your score is <span className='text-4xl text-orange-300'>{score}</span>  </p>
     </div>
   )
 }

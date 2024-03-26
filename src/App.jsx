@@ -4,6 +4,7 @@
 import { useState } from "react"
 import StartGame from "./components/StartGame"
 import GamePlay from "./components/GamePlay"
+import  AuroraHero  from "./components/AuroraHero"
 
 function App() {
  const [toggleButton, setToggleButton] = useState(false)
@@ -16,9 +17,15 @@ function App() {
   return (
     <>
       {
-        toggleButton ? <GamePlay /> : <StartGame handleToggle= {handleToggle}/>
+        toggleButton ? <GamePlay /> : <AuroraHero handleToggle= {handleToggle}/>
       }
-    
+
+{/* {
+        toggleButton ? <GamePlay /> : <StartGame handleToggle= {handleToggle}/>
+      } */}
+
+
+      {/* <AuroraHero /> */}
     </>
   )
 }
