@@ -36,7 +36,7 @@ const RoleDice = ({selectedDice, setSelectedDice,rollDice,setScore}) => {
         {  rules &&
              <p className='p-4 text-lime-500 bg-amber-950 rounded-2xl shadow-lg border-4 border-lime-300'>
             select any number <br />
-            Clcik on dice image <br />
+            Click on dice image <br />
             after click on dice if selected number is equal to dice number you will get some point as dice <br />
             if you get wrong guess then 2 points will be deducted
         </p>
