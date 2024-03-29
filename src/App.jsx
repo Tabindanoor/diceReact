@@ -15,18 +15,11 @@ function App() {
   }
 
   return (
-    <>
+    <div className="vh-100">
       {
         toggleButton ? <GamePlay /> : <AuroraHero handleToggle= {handleToggle}/>
       }
-
-{/* {
-        toggleButton ? <GamePlay /> : <StartGame handleToggle= {handleToggle}/>
-      } */}
-
-
-      {/* <AuroraHero /> */}
-    </>
+    </div>
   )
 }
 
