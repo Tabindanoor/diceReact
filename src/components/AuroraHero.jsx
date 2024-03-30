@@ -47,7 +47,7 @@ const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
     </div>
         <p className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed">
           You must try your luck, if you win, you will got plus points and if you lose you would get 2 minus ponits, so choose 
-          a number carefully and enjoy yourself :)
+          a number carefully and enjoy yourself :))
         </p>
         <motion.button
         onClick={handleToggle}
