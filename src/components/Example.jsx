@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const Example = () => {
   return (
-    <div className="grid place-content-center bg-black px-4 h-screen w-screen">
+    <div className="grid place-content-center bg-black px-4 h-screen w-screen opacity-75 scroll-smooth transition-opacity">
       <BarLoader />
     </div>
   );
@@ -29,7 +29,7 @@ const BarLoader = () => {
   return (
     <motion.div
       transition={{
-        staggerChildren: 0.25,
+        staggerChildren:  0.2,
       }}
       initial="initial"
       animate="animate"

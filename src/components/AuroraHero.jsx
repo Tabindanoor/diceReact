@@ -32,7 +32,7 @@ const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
       style={{
         backgroundImage,
       }}
-      className="relative grid min-h-screen place-content-center vh-100 overflow-hidden bg-gray-950 px-4 py-24 text-gray-200"
+      className="relative grid scroll-smooth  min-h-screen place-content-center vh-100 overflow-hidden bg-gray-950 px-4 py-24 text-gray-200"
     >
       <div className="relative z-10 flex flex-col items-center">
         <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm">
