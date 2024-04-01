@@ -79,7 +79,7 @@ const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
   const color = useMotionValue(COLORS_TOP[0]);
   const [selectedDice, setSelectedDice] = useState(1)
   const [clickDice, setClickDice] = useState()
-  console.log(clickDice)
+  // console.log(clickDice)
   const [error,setError] = useState()
   const [score,setScore] = useState(0)
 
@@ -132,19 +132,9 @@ const rollDice=()=>{
       }}
       className="relative grid min-h-screen place-content-center overflow-hidden bg-gray-950 px-4 py-24 text-gray-200"
     >
-    
     <TotalScore score={score}   />
- 
-        <Dice  clickDice={clickDice} setClickDice={setClickDice} error={error}  setError={setError} />
-
+         <Dice  clickDice={clickDice} setClickDice={setClickDice} error={error}  setError={setError} />
         <RoleDice setScore ={setScore} selectedDice={selectedDice}  rollDice={rollDice} setSelectedDice={setSelectedDice}/>
-
-
-      {/* <div className="absolute inset-0 z-0">
-        <Canvas>
-          <Stars radius={50} count={2500} factor={4} fade speed={2} />
-        </Canvas>
-      </div> */}
     </motion.section>
   );
 };

@@ -10,18 +10,7 @@ const Dice = ({clickDice,setClickDice,setError,error}) => {
     }
 
   return (
-  //   <div>
-  //    <p className='text-lg font-mono text-red-600'> {error} </p> 
-  //    <br />
-  //  {numbers.map((num,index)=>{
-  //   return(
-  //   <div key={index} className='grid  text-center mx-auto justify-center' onClick={()=>{handleClick(num)}} >
-  //       <span className='p-2 w-10 border border-green-500  border-dashed text-center hover:text-white hover:bg-green-400'>{num}</span>
-  //   </div>
-  //   )})
-  //   }
-
-  //   </div>
+ 
   <div>
   <p className='text-lg font-mono text-red-600'>{error}</p>
   <br />
