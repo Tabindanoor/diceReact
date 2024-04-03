@@ -130,7 +130,7 @@ const rollDice=()=>{
       style={{
         backgroundImage,
       }}
-      className="relative grid min-h-screen place-content-center overflow-hidden bg-gray-950 px-4 py-24 text-gray-200"
+      className="relative grid min-h-screen place-content-center overflow-hidden bg-gray-950 px-5 py-24 text-gray-200"
     >
     <TotalScore score={score}   />
          <Dice  clickDice={clickDice} setClickDice={setClickDice} error={error}  setError={setError} />
